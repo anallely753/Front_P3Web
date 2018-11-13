@@ -24,4 +24,4 @@ $(document).ready(function(){
   $('.slider').slider();
 });
 
- 
+ var instance = M.Tabs.init(el, options);

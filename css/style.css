@@ -9,6 +9,11 @@
   background-color: #ffffff;
 }
 
+.coleccion{
+  height: 70vh;
+  background-color: gray;
+}
+
 iframe{
 
   height: 60vh;
