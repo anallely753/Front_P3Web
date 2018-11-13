@@ -8358,33 +8358,19 @@ input[type=range]::-ms-thumb {
   background-color: #4CAF50;
 }
 
-.carousel {
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  height: 90vh;
-  -webkit-perspective: 50vw;
-          perspective: 50vw;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
- 
-}
+    .carousel {
 
-.carousel .carrs {
-  overflow: hidden;
   position: relative;
   width: 100vw;
-  height: 30vw;
-  -webkit-perspective: 500px;
-          perspective: 500px;
+  height: 10vw;
+  -webkit-perspective: 30vh;
+          perspective: 30vh;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
- 
-}
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;}
+
+
 
 .carousel.carousel-slider {
   top: 0;
@@ -8395,7 +8381,7 @@ input[type=range]::-ms-thumb {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 3vh;
   z-index: 1;
 }
 
@@ -8405,34 +8391,28 @@ input[type=range]::-ms-thumb {
 
 .carousel.carousel-slider .carousel-item {
   width: 100%;
-  height: 100%;
-  min-height: 400px;
+  height: 90%;
+  min-height: 90vh;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .carousel.carousel-slider .carousel-item h2 {
-  font-size: 24px;
+  font-size: 4vh;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 25vw;
 }
 
 .carousel.carousel-slider .carousel-item p {
   font-size: 15px;
 }
 
-.carousel .carousel-item {
-  visibility: hidden;
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 .carousel .carousel-item > img {
   width: 100%;
+  height: 100%;
 }
 
 .carousel .indicators {
