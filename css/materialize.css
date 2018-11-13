@@ -4320,7 +4320,7 @@ nav .sidenav-trigger {
   position: relative;
   z-index: 1;
   height: 56px;
-  margin: 0px 18px;
+  margin: 0 18px;
 }
 
 nav .sidenav-trigger i {
@@ -8358,19 +8358,18 @@ input[type=range]::-ms-thumb {
   background-color: #4CAF50;
 }
 
-    .carousel {
-
+.carousel {
+  overflow: hidden;
   position: relative;
-  width: 100vw;
-  height: 10vw;
-  -webkit-perspective: 30vh;
-          perspective: 30vh;
+  width: 100%;
+  height: 400px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;}
-
-
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
 
 .carousel.carousel-slider {
   top: 0;
@@ -8381,7 +8380,7 @@ input[type=range]::-ms-thumb {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 3vh;
+  bottom: 20px;
   z-index: 1;
 }
 
@@ -8391,28 +8390,34 @@ input[type=range]::-ms-thumb {
 
 .carousel.carousel-slider .carousel-item {
   width: 100%;
-  height: 90%;
-  min-height: 90vh;
+  height: 100%;
+  min-height: 400px;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .carousel.carousel-slider .carousel-item h2 {
-  font-size: 4vh;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 25vw;
+  line-height: 32px;
 }
 
 .carousel.carousel-slider .carousel-item p {
   font-size: 15px;
 }
 
-
+.carousel .carousel-item {
+  visibility: hidden;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .carousel .carousel-item > img {
   width: 100%;
-  height: 100%;
 }
 
 .carousel .indicators {
@@ -8481,19 +8486,10 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s 1s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s 1s,
- -webkit-transform .3s;
+  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s, visibility 0s 1s;
+  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8546,19 +8542,10 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- visibility 0s,
- -webkit-transform .3s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s;
-  transition: opacity .3s,
- transform .3s,
- visibility 0s,
- -webkit-transform .3s;
+  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
+  transition: opacity .3s, transform .3s, visibility 0s;
+  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
   z-index: -1;
 }
 
