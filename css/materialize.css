@@ -8362,7 +8362,7 @@ input[type=range]::-ms-thumb {
   overflow: hidden;
   position: relative;
   width: 100vw;
-  height: 100vw;
+  height: 90vh;
   -webkit-perspective: 50vw;
           perspective: 50vw;
   -webkit-transform-style: preserve-3d;

@@ -93,6 +93,12 @@ header{
     background-repeat: no-repeat;
 }
 
+.carousel .firstd{
+  background-image: url("../img/reloj.jpg");
+   background-size:100% auto;
+    background-repeat: no-repeat;
+}
+
 
 
   .nav-wrapper .brand-logo{
